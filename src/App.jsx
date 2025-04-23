@@ -29,7 +29,7 @@ const StickyNote = () => {
           onChange={inputchange}
           style={{ padding: '10px', width: '70%', marginRight: '10px' }}
         />
-        <button onClick={Addbutton} style={{ padding: '10px',backgroundColor:"blue", color:"white" }}>Add Note</button>
+        <button onClick={Addbutton} style={{ padding: '10px', backgroundColor: "blue", color: "white" }}>Add Note</button>
       </div>
       <div style={{ display: 'block', gap: '10px' }}>
         {
@@ -53,6 +53,11 @@ const StickyNote = () => {
                   position: 'absolute', top: '5px', right: '5px', background: '#ff6b6b', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer', padding: '2px 6px'
                 }}
               >X</button>
+              <button 
+              onClick={()=>updatebutton(index)}
+              style={{
+                position: 'absolute', top: '5px', right: '35px', background: 'green', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer', padding: '2px 6px'
+              }}>Edit</button>
             </div>
           ))
         }
