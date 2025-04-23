@@ -43,6 +43,7 @@ const StickyNote = () => {
                 width: '150px',
                 position: 'relative',
                 marginBottom: '10px',
+                overflow: 'hidden'
               }}
               className='hover:scale-105 transition duration-300'
             >
